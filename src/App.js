@@ -130,6 +130,15 @@ class App extends Component {
             <Drumpad inputKey="K" dataInputKey="75" sound="tom" onClick={this.tomSelected} />
             <Drumpad inputKey="L" dataInputKey="76" sound="tink" onClick={this.tinkSelected} />
           </div>
+          <audio data-key="65" src={clapAudio}></audio>
+          <audio data-key="83" src={hihhatAudio}></audio>
+          <audio data-key="68" src={kickAudio}></audio>
+          <audio data-key="70" src={openhatAudio}></audio>
+          <audio data-key="71" src={audio1}></audio>
+          <audio data-key="72" src={rideAudio}></audio>
+          <audio data-key="74" src={snareAudio}></audio>
+          <audio data-key="75" src={tomAudio}></audio>
+          <audio data-key="76" src={tinkAudio}></audio>
       </div>
     );
   }
