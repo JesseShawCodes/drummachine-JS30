@@ -28,8 +28,6 @@ class App extends Component {
     this.snareSelected = this.snareSelected.bind(this);
     this.tomSelected = this.tomSelected.bind(this);
     this.tinkSelected = this.tinkSelected.bind(this);
-
-    this.myfunction = this.myfunction.bind(this)
   }
 
   /*KeyDown Functionalities */
