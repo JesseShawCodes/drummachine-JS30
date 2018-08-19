@@ -32,6 +32,7 @@ class App extends Component {
     this.myfunction = this.myfunction.bind(this)
   }
 
+  /*KeyDown Functionalities */
   componentWillMount() {
     document.addEventListener("keydown", this.onKeyPressed.bind(this));
   }
@@ -70,6 +71,7 @@ class App extends Component {
     }
   }
 
+  /*Audio Trigger Functions */
   clapSelected() {
     let audio = new Audio(`${clapAudio}`)
     audio.play()
@@ -115,17 +117,12 @@ class App extends Component {
     audio.play()
   }
 
-  myfunction() {
-    console.log("KEY DOWN")
-  }
-
-
   render() {
     return (
 
       <div className="App">
           <div className="keys">
-            <Drumpad inputKey="A" dataInputKey="65" sound="Clap" onClick={this.clapSelected} onkeypress={this.myfunction}/>
+            <Drumpad inputKey="A" dataInputKey="65" sound="Clap" onClick={this.clapSelected}/>
             <Drumpad inputKey="S" dataInputKey="83" sound="hihat" onClick={this.hiHatSelected}/>
             <Drumpad inputKey="D" dataInputKey="68" sound="kick" onClick={this.kickSelected}/>
             <Drumpad inputKey="F" dataInputKey="70" sound="openhat" onClick={this.openHatSelected}/>
